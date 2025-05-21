@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +8,12 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   font-family: Arial, sans-serif;
   background-color: #0e0e0e;
   color: #333;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
-
 
 .header {
   background-color: #1262b1;
@@ -44,7 +41,6 @@ body {
   color: #f39c12;
 }
 
-
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -66,8 +62,8 @@ body {
 
 .mural {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 25px; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
   padding: 40px 20px;
   justify-items: center;
   align-items: center;
@@ -75,15 +71,14 @@ body {
 
 .mural .item {
   width: 100%;
-  max-width: 500px; 
-  aspect-ratio: 1 / 1; 
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
   perspective: 1000px;
   transition: transform 0.6s ease-in-out;
   display: flex;
   position: relative;
   overflow: hidden;
 }
-
 
 .card {
   width: 100%;
@@ -97,9 +92,8 @@ body {
   transition: transform 0.8s ease;
 }
 
-
 .front {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -110,11 +104,10 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border: 4px solid rgb(0, 0, 0); 
-  border-radius: 10px; 
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
 
 .back {
   position: absolute;
@@ -129,43 +122,41 @@ body {
   justify-content: center;
   text-align: center;
   opacity: 0;
-  transform: translateY(100%); 
+  transform: translateY(100%);
   transition: opacity 0.6s ease, transform 0.6s ease;
   border-radius: 10px;
   padding: 20px;
   box-sizing: border-box;
 }
 
-
 .item:hover .back {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .item:hover .front img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-
 
 @media (max-width: 768px) {
   .mural {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 
   .hero h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .hero p {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .mural .item {
-    height: 250px; 
+    height: 250px;
   }
 
   .nav-menu {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
@@ -175,18 +166,17 @@ body {
   }
 
   .nav-menu a {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
 
-
 @media (max-width: 480px) {
   .hero h2 {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .hero p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 
   .header {
@@ -194,24 +184,23 @@ body {
   }
 
   .nav-menu a {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
 
-
 @media (min-width: 1200px) {
   .hero h2 {
-    font-size: 3rem; 
+    font-size: 3rem;
   }
 }
 
 .titulo-secao {
-  font-size: 3rem; 
+  font-size: 3rem;
   text-align: center;
   color: #1262b1;
   margin: 60px 0 40px;
   position: relative;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .titulo-secao {
@@ -219,7 +208,7 @@ body {
   text-align: center;
   color: #1262b1;
   margin: 60px 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 20px 0;
   border-top: 4px solid #1262b1;
   border-bottom: 4px solid #1262b1;
@@ -315,5 +304,5 @@ footer {
 }
 
 .hero {
-  padding-top: 80px; 
+  padding-top: 80px;
 }
